@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Food Locator</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC03sl_El7bvywz-WiAb4fL6XDtoztyVkU&callback=initialise&libraries=geometry,places" async defer></script>
+<script src="js/food.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+    <script>
+    $.get("/templates/navbar.html", function(data) {
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+<div id='map'></div>
+
+<select id="selector">
+	<option value="restaurant">No Category</option>
+	<option value="mexican food">Mexican</option>
+	<option value="italian food">Italian</option>
+	<option value="steak">Steak</option>
+	<option value="pizza">Pizza</option>
+	<option value="fast food">Fast Food</option>
+	<option value="brunch">Brunch</option>
+</select>
+
+<input id='zipField' type="number" value="30329" min="10000" max="99999">
+<button id='setBtn' style="display:none">Save values</button>
+<button id="btn" style="display:none">Click me</button>
+
+
+<p>Go eat at:</p>
+<p id="chosenPlace" style="font-weight: bold"></p>
+<button id='returnRandom' style="display:none">Another one!</button>
+<button id='showAll' style="display:none">Show All</button>
+<button id='clear' style="display:none">Clear</button>
+<div id='list'>
+	<div id="items"></div>
+</div>
+<!-- footer -->
+<script>
+		$.get("/templates/footer.html", function(data) {
+			$("#footer-placeholder").replaceWith(data);
+		});
+		</script>
+		<!-- end footer -->
+	</body>
+
+
+</html>

@@ -10,7 +10,7 @@ var gameOver;
 var canClick;
 
 function preload() {
-    img = loadImage("assets/board.png");
+    img = loadImage("board.png");
 }
 
 function setup() {
@@ -52,7 +52,7 @@ function click() {
             var d = new Date();
             n = d.getTime();
             if (canClick) {
-                if (mouseY <= height && mouseX > 0 && mouseX < width) {
+                if (mouseY >= 0 && mouseY <= height && mouseX > 0 && mouseX < width) {
                     if (mouseX > 542.5) {
                         dropPiece(6);
                     } else if (mouseX > 457.5) {

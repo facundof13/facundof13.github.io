@@ -19,9 +19,8 @@ var list = [];
 var coords = [];
 var uniqueList = [];
 var keyword;
-var comeplete = false;    
 
-function initialize() {
+function initialise() {
     map = new google.maps.Map(document.getElementById('map'));
 }
 
