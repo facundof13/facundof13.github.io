@@ -14,10 +14,21 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 <!--Navigation bar-->
 <div id="nav-placeholder">
 
 </div>
+=======
+<nav class="navigation">
+	<ul>
+		<li><a href="index"><span>Home</span></a></li>
+		<li><a href="games/games"><span>Games</span></a></li>
+		<li><a href="tools/tools"><span>Tools</span></a></li>
+		<li><a href="#" class="current"><span>About</span></a></li>
+</ul>
+</nav>
+>>>>>>> master
 
 <script>
 $.get("/templates/navbar.html", function(data){
@@ -28,6 +39,7 @@ $.get("/templates/navbar.html", function(data){
 <h2>About</h2>
 <div class="sidebar"><p2>These games are coded in P5js and Javascript. To learn more about p5js, click <a href="https://p5js.org/">here.</a></p2></div>
 
+<<<<<<< HEAD
 <!-- footer -->
 <script>
         $.get("/templates/footer.html", function(data) {
@@ -35,5 +47,16 @@ $.get("/templates/navbar.html", function(data){
         });
         </script>
         <!-- end footer -->
+=======
+<footer>
+<p>Copyright Facundo Figueroa <script language="JavaScript" type="text/javascript">
+	now = new Date
+	theYear=now.getYear()
+	if (theYear < 1900)
+	theYear=theYear+1900
+	document.write(theYear)
+</script>. Contact information: <a href="mailto:facundof13@gmail.com"> facundof13@gmail.com</a></p>
+</footer>
+>>>>>>> master
 </body>
 </html>

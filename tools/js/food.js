@@ -5,7 +5,7 @@ $(document).ready(function() {
         $("#returnRandom").show();
         $("#showAll").show();
         $("#clear").show();
-    }, 5000);
+    }, 3000);
     document.getElementById("btn").onclick = search;
     document.getElementById("setBtn").onclick = setValues;
     document.getElementById("returnRandom").onclick = returnRandom;    
