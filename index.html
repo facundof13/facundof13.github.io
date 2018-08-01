@@ -25,7 +25,31 @@ $.get("/templates/navbar.html", function(data){
 });
 </script>
 <!--end of Navigation bar-->
-<h2>Facundo's Games and Tools</h2>
+
+
+<h2 class="title main">Facundo's Games and Tools</h2>
+<div class="flex-grid">
+    <div class='col'>
+        <h3 class="title">About this site</h3>
+            <p>All the games on this website are coded in client-side javascript using a library called <a href="http://www.p5js.org">p5js.</a></a></p>
+            <p>The scrabble word value is written in vanilla client-side javascript. The food locator tool is also written in vanilla javascript, using the <a href="https://developers.google.com/maps/documentation/javascript/places">google maps places library.</a></p>
+            This website itself is hand-written using <a href="https://getbootstrap.com/">Twitter's Bootstrap</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox.</a>
+        </div>
+    <div class='col'>
+        <h3 class="title">About me</h3>
+        <p>My name is Facundo Figueroa. I'm from Montevideo, Uruguay. I'm currently studying Computer Science at Georgia State Univeresity.</p>
+    </div>
+    
+</div>
+<div class="flex-grid">
+        <div class='col wide'>
+                <h3 class="title">Links</h3>
+                <p><a href="/resume.pdf">Click here for my resume</a></p>
+                <p><a href="http://www.github.com/facundof13">Click here for my GitHub</a></p>
+                <p><a href="mailto:facundof13@gmail.com">Click here to email me</a></p>
+            </div>
+</div>
+
 
 <!-- footer -->
 <script>
