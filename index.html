@@ -9,8 +9,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="/css/style.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
-
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -31,22 +30,30 @@ $.get("/templates/navbar.html", function(data){
 <div class="flex-grid">
     <div class='col'>
         <h3 class="title">About this site</h3>
-            <p>All the games on this website are coded in client-side javascript using a library called <a href="http://www.p5js.org">p5js.</a></a></p>
-            <p>The scrabble word value is written in vanilla client-side javascript. The food locator tool is also written in vanilla javascript, using the <a href="https://developers.google.com/maps/documentation/javascript/places">google maps places library.</a></p>
+            <p>I created this website to showcase my games and tools built over my time practicing new programming concepts. None of the games will work on a mobile website. Both tools, however, will.</p>
+            <p>All the games on this website are coded in client-side javascript using a library called <a href="http://www.p5js.org">p5js.</a> The scrabble word value is written in vanilla client-side javascript. The food locator tool is also written in vanilla javascript, using the <a href="https://developers.google.com/maps/documentation/javascript/places">google maps places library.</a></p>
             This website itself is hand-written using <a href="https://getbootstrap.com/">Twitter's Bootstrap</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox.</a>
         </div>
     <div class='col'>
         <h3 class="title">About me</h3>
-        <p>My name is Facundo Figueroa. I'm from Montevideo, Uruguay. I'm currently studying Computer Science at Georgia State Univeresity.</p>
+        <p>My name is Facundo Figueroa. I'm from Montevideo, Uruguay. I'm currently studying Computer Science at Georgia State Univeresity. </p>
     </div>
     
 </div>
 <div class="flex-grid">
         <div class='col wide'>
                 <h3 class="title">Links</h3>
-                <p><a href="facundof13.github.io/Resume.pdf">Click here for my resume</a></p>
-                <p><a href="http://www.github.com/facundof13">Click here for my GitHub</a></p>
-                <p><a href="mailto:facundof13@gmail.com">Click here to email me</a></p>
+                <div class='links'>
+                    <div class="link-items"><a href="http://www.facundof13.github.io/Resume.pdf"><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></a>
+                        <p>Resume</p>
+                    </div>
+                    <div class="link-items"><a href="http://www.github.com/facundof13"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                        <p>Github</p>
+                        </div>
+                    <div class="link-items"><a href="mailto:facundof13@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+                        <p>Email</p>
+                    </div>
+                </span>
             </div>
 </div>
 

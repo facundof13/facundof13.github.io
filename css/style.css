@@ -23,13 +23,19 @@ body {
     color: #294F6D;
 }
 
-.wide p{
-  text-align: center;
-}
-
 .col a {
   color: #294f6d;
   text-decoration: underline;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+
+}
+.link-items {
+  flex-direction: row;
+  text-align: center;
 }
 /* .col p {
     
