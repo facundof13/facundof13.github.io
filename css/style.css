@@ -27,7 +27,7 @@ body {
   text-align: center;
 }
 
-a {
+.col a {
   color: #294f6d;
   text-decoration: underline;
 }
