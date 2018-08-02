@@ -28,18 +28,29 @@
 <!-- end nav bar -->
 
 <script language="javascript" type="text/javascript" src="js/tic-tac-toe.js"></script>
-<div id="sketch"></div>
-<p id="instructions">The object of Tic Tac Toe is to get three in a row. You play on a three by three game board. The first player is known as X and the second is O. Players alternate placing Xs and Os on the game board until either oppent has three in a row or all nine squares are filled.</p>
 
-<div id="footer-placeholder">
-</div>
+<div class="flex-grid-sketches">
+        <div class="sketch-row">
+            <div id="sketch"></div>
+        </div>
+        <div class="sketch-row">
+            <div class="instructions">
+                <p id="instructions">The object of Tic Tac Toe is to get three in a row. You play on a three by three game board. The first player is known as X and the second is O. Players alternate placing Xs and Os on the game board until either oppent has three in a row or all nine squares are filled.</p>
+            </div>
+        </div>
+    </div>
 <!-- footer -->
-<script>
-$.get("/templates/footer.html", function(data) {
-    $("#footer-placeholder").replaceWith(data);
-});
-</script>
-<!-- end footer -->
+<div class="footer-container">
+        <div class="bottom">
+            <div id="footer-placeholder"></div>
+        </div>
+    </div>
+    <script>
+            $.get("/templates/footer.html", function(data) {
+                $("#footer-placeholder").replaceWith(data);
+            });
+            </script>
+            <!-- end footer -->
 </body>
 </html>
 

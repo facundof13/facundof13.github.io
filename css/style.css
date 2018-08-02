@@ -1,13 +1,23 @@
-
-
 body {
     background-color: #d3dee7;
-    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .flex-grid {
     display: flex;
 }
-
+.no-margin {
+  margin-top: 10px;
+  margin-bottom: -25px;
+}
 .col {
     justify-content: flex-start;
     flex-direction: column;
@@ -23,7 +33,7 @@ body {
     color: #294F6D;
 }
 
-.col a {
+.col a, footer a {
   color: #294f6d;
   text-decoration: underline;
 }
@@ -37,9 +47,17 @@ body {
   flex-direction: row;
   text-align: center;
 }
-/* .col p {
-    
-} */
+
+#sketch {
+  display: flex;
+  margin: 10px;
+}
+@media screen and (max-width: 640px) {
+  #sketch canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
 .main {
     padding: 20px;
 }
@@ -49,6 +67,29 @@ body {
       max-width: 480px;
     }
   }
+
+.flex-grid-sketches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.instructions {
+    margin: 10px;
+    border: solid #a3b8c8;
+    background-color: white;
+    font-size: 14px;
+    text-align: center;
+    max-width: 55em;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+footer p {
+  text-align: center;
+  font-size: 10px;
+}
 /* bootstrap stuff */
 .navbar {
   background-color: #718ea4;

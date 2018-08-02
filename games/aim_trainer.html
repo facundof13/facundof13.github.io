@@ -18,23 +18,42 @@
 
 <body>
 <!--Navigation bar-->
-    <div id="nav-placeholder">
-    </div>
+    <div id="nav-placeholder"></div>
     <script>
     $.get("/templates/navbar.html", function(data) {
         $("#nav-placeholder").replaceWith(data);
     });
     </script>
 
-<div id="sketch"></div>
-<p id="instructions">Click on the circles as they appear. Miss 3 circles and you lose.</p>
 
+<div class="container">
+    <div class="flex-grid-sketches">
+        <div class="sketch-row">
+            <div id="sketch"></div>
+        </div>
+        <div class="sketch-row">
+            <div class="instructions">
+                <p id="instructions">Click on the circles as they appear. Miss 3 circles and you lose.</p>
+            </div>
+        </div>
+        <div class="sketch-row">
+            <div id="button">
+                    <button id="reset" type="button" onClick="window.location.reload()">Reset Game</button>
+                </div>
+        </div>
+    </div>
+</div>
 <!-- footer -->
-<script>
-        $.get("/templates/footer.html", function(data) {
-            $("#footer-placeholder").replaceWith(data);
-        });
-        </script>
-        <!-- end footer -->
+<div class="footer-container">
+        <div class="bottom">
+            <div id="footer-placeholder"></div>
+        </div>
+    </div>
+    <script>
+            $.get("/templates/footer.html", function(data) {
+                $("#footer-placeholder").replaceWith(data);
+            });
+            </script>
+            <!-- end footer -->
 </body>
 </html>

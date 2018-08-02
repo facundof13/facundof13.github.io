@@ -13,6 +13,8 @@ function preload() {
     img = loadImage("board.png");
 }
 
+
+
 function setup() {
     var canvas = createCanvas(640, 480);
     canvas.parent('sketch');
@@ -103,11 +105,8 @@ this.Point = function(x, y) {
 function fillBoardArray() {
     currentLetter = 0;
     for (var i = 0; i < height; i++) {
-
         if ((i - 41) % 80 == 0) {
-
             for (var j = 0; j < width; j++) {
-
                 if ((j - 50) % 90 == 0) {
                     //j is x, i is y
                     temp[currentLetter] = new Point(j, i);

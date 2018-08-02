@@ -36,25 +36,31 @@
 </select>
 
 <input id='zipField' type="number" value="30329" min="10000" max="99999">
-<button id='setBtn' style="display:none">Save values</button>
-<button id="btn" style="display:none">Click me</button>
+<button id='setBtn'>Save values</button>
+<button id="btn">Decide for me</button>
 
 
 <p>Go eat at:</p>
 <p id="chosenPlace" style="font-weight: bold"></p>
-<button id='returnRandom' style="display:none">Another one!</button>
-<button id='showAll' style="display:none">Show All</button>
-<button id='clear' style="display:none">Clear</button>
+<button id='returnRandom'>Reroll!</button>
+<button id='showAll'>Show All</button>
+<button id='clear'>Clear</button>
 <div id='list'>
 	<div id="items"></div>
 </div>
+
 <!-- footer -->
-<script>
-		$.get("/templates/footer.html", function(data) {
-			$("#footer-placeholder").replaceWith(data);
-		});
-		</script>
-		<!-- end footer -->
+<div class="footer-container">
+		<div class="bottom">
+			<div id="footer-placeholder"></div>
+		</div>
+	</div>
+	<script>
+			$.get("/templates/footer.html", function(data) {
+				$("#footer-placeholder").replaceWith(data);
+			});
+			</script>
+			<!-- end footer -->
 	</body>
 
 

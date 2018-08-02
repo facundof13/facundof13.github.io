@@ -76,7 +76,21 @@ this.Player = function() {
     this.show = function() {
         rectMode(CENTER);
         fill(10, 10, 200);
+        if (mouseX > width) {
+            mouseX = width - 10;
+        }
+        if (mouseX < 0) {
+            mouseX = 10;
+        }
+        if (mouseY > height) {
+            mouseY = height - 10;
+        }
+        if (mouseY < 0) {
+            mouseY = 10;
+        }
+        else {
         rect(mouseX, mouseY, 20, 20);
+        }
     }
 
     this.updateSides = function() {

@@ -26,44 +26,51 @@ $.get("/templates/navbar.html", function(data){
 <!--end of Navigation bar-->
 
 
-<h2 class="title main">Facundo's Games and Tools</h2>
-<div class="flex-grid">
-    <div class='col'>
-        <h3 class="title">About this site</h3>
-            <p>I created this website to showcase my games and tools built over my time practicing new programming concepts. None of the games will work on a mobile website. Both tools, however, will.</p>
-            <p>All the games on this website are coded in client-side javascript using a library called <a href="http://www.p5js.org">p5js.</a> The scrabble word value is written in vanilla client-side javascript. The food locator tool is also written in vanilla javascript, using the <a href="https://developers.google.com/maps/documentation/javascript/places">google maps places library.</a></p>
-            This website itself is hand-written using <a href="https://getbootstrap.com/">Twitter's Bootstrap</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox.</a>
-        </div>
-    <div class='col'>
-        <h3 class="title">About me</h3>
-        <p>My name is Facundo Figueroa. I'm from Montevideo, Uruguay. I'm currently studying Computer Science at Georgia State Univeresity. </p>
-    </div>
-    
-</div>
-<div class="flex-grid">
-        <div class='col wide'>
-                <h3 class="title">Links</h3>
-                <div class='links'>
-                    <div class="link-items"><a href="http://www.facundof13.github.io/Resume.pdf"><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></a>
-                        <p>Resume</p>
-                    </div>
-                    <div class="link-items"><a href="http://www.github.com/facundof13"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-                        <p>Github</p>
-                        </div>
-                    <div class="link-items"><a href="mailto:facundof13@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-                        <p>Email</p>
-                    </div>
-                </span>
+<div class="container">
+    <h2 class="title main">Facundo's Games and Tools</h2>
+    <div class="flex-grid">
+        <div class='col'>
+            <h3 class="title">About this site</h3>
+                <p>I created this website to showcase my games and tools built over my time practicing new programming concepts. None of the games will work on a mobile website. Both tools, however, will.</p>
+                <p>All the games on this website are coded in client-side javascript using a library called <a href="http://www.p5js.org">p5js.</a> The scrabble word value is written in vanilla client-side javascript. The food locator tool is also written in vanilla javascript, using the <a href="https://developers.google.com/maps/documentation/javascript/places">google maps places library.</a></p>
+                This website itself is hand-written using <a href="https://getbootstrap.com/">Twitter's Bootstrap</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox.</a>
             </div>
+        <div class='col'>
+            <h3 class="title">About me</h3>
+            <p>My name is Facundo Figueroa. I'm from Montevideo, Uruguay. I'm currently studying Computer Science at Georgia State Univeresity. </p>
+        </div>
+    </div>
+    <div class="flex-grid">
+            <div class='col wide'>
+                    <h3 class="title">Links</h3>
+                    <div class='links'>
+                        <div class="link-items"><a href="http://www.facundof13.github.io/Resume.pdf"><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></a>
+                            <p>Resume</p>
+                        </div>
+                        <div class="link-items"><a href="http://www.github.com/facundof13"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                            <p>Github</p>
+                            </div>
+                        <div class="link-items"><a href="mailto:facundof13@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+                            <p>Email</p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+    </div>
 </div>
 
 
 <!-- footer -->
+<div class="footer-container">
+    <div class="bottom">
+        <div id="footer-placeholder"></div>
+    </div>
+</div>
 <script>
-        $.get("/templates/footer.html", function(data) {
-            $("#footer-placeholder").replaceWith(data);
-        });
-        </script>
-        <!-- end footer -->
+		$.get("/templates/footer.html", function(data) {
+			$("#footer-placeholder").replaceWith(data);
+		});
+		</script>
+		<!-- end footer -->
 </body>
 </html>

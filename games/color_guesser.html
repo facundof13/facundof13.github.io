@@ -25,15 +25,29 @@
     });
     </script>
 
-<div id="sketch"></div>
-<p id="instructions">Guess the circle that correctly matches the RGB.</p>
-
+<div class="container">
+    <div class="flex-grid-sketches">
+            <div class="sketch-row">
+                <div id="sketch"></div>
+            </div>
+            <div class="sketch-row">
+                <div class="instructions">
+                    <p id="instructions">Guess the circle that correctly matches the RGB.</p>
+                </div>
+            </div>
+        </div>
+</div>
 <!-- footer -->
-<script>
-        $.get("/templates/footer.html", function(data) {
-            $("#footer-placeholder").replaceWith(data);
-        });
-        </script>
-        <!-- end footer -->
+<div class="footer-container">
+        <div class="bottom">
+            <div id="footer-placeholder"></div>
+        </div>
+    </div>
+    <script>
+            $.get("/templates/footer.html", function(data) {
+                $("#footer-placeholder").replaceWith(data);
+            });
+            </script>
+            <!-- end footer -->
 </body>
 </html>

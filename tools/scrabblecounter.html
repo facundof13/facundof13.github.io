@@ -31,12 +31,17 @@
 </div>
 
 <!-- footer -->
-<script>
-        $.get("/templates/footer.html", function(data) {
-            $("#footer-placeholder").replaceWith(data);
-        });
-        </script>
-        <!-- end footer -->
+<div class="footer-container">
+        <div class="bottom">
+            <div id="footer-placeholder"></div>
+        </div>
+    </div>
+    <script>
+            $.get("/templates/footer.html", function(data) {
+                $("#footer-placeholder").replaceWith(data);
+            });
+            </script>
+            <!-- end footer -->
 	</body>
 
 

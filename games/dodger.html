@@ -26,20 +26,39 @@
     });
     </script>
     
-    <p id="dodgertext">Press <strong>enter</strong> to begin.</p>
-    <p id="score">0</p>
-    <div id="sketch"></div>
-    <div id="button">
-        <button id="reset" type="button" onClick="window.location.reload()">Reset Game</button>
-    </div>
-    <p id="instructions">Use the mouse to avoid the faling enemies.</p>
+    
+    <div class="flex-grid-sketches">
+            <div class="sketch-row no-margin">
+                    <p id="score">0</p>
+                </div>
+            <div class="sketch-row">
+                <div id="sketch"></div>
+            </div>
+            <div class="sketch-row">
+                <div class="instructions">
+                    <p id="instructions">Use the mouse to avoid the faling enemies.</p>
+                    <p id="dodgertext">Press <strong>enter</strong> to begin.</p>
+                </div>
+            </div>
+            <div class="sketch-row">
+                <div id="button">
+                    <button id="reset" type="button" onClick="window.location.reload()">Reset Game</button>
+                    </div>
+                </div>
+            </div>
+    
     <!-- footer -->
+<div class="footer-container">
+        <div class="bottom">
+            <div id="footer-placeholder"></div>
+        </div>
+    </div>
     <script>
-        $.get("/templates/footer.html", function(data) {
-            $("#footer-placeholder").replaceWith(data);
-        });
-        </script>
-        <!-- end footer -->
+            $.get("/templates/footer.html", function(data) {
+                $("#footer-placeholder").replaceWith(data);
+            });
+            </script>
+            <!-- end footer -->
 </body>
 
 </html>
