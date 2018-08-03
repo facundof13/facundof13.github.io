@@ -14,6 +14,21 @@ function setup() {
     score = 0;
 }
 
+function iosNext() {
+    if (correct) {
+        feedbackToText(true);
+        hideWrongs();
+        showResetText();
+        score++;
+        reset();
+    } else if (!correct && !canClick) {
+        feedbackToText(false);
+        hideWrongs();
+        showResetText();
+        reset();
+    }
+}
+
 function draw() {
     background(0);
     instructions();
@@ -124,8 +139,7 @@ function getChoice() {
 }
 
 function correctChoice(choice) {
-    if (choice == rand) return true;
-    else return false;
+    return (choice == rand);
 }
 
 function reset() {
@@ -164,6 +178,14 @@ function hideWrongs() {
             list[i].b = 0;
         }
     }
+}
+
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+   }
 }
 //print the rgb of a random color
 //print 5 different colors

@@ -4,7 +4,7 @@ var seconds = 180;
 var strikes = 0;
 var playing = false;
 var lost = false;
-
+var touch = false;
 
 function setup() {
 	var canvas = createCanvas(640, 480);
@@ -24,7 +24,7 @@ function draw() {
 
 	if(!playing && !lost) {
 		startText();
-		if(keyIsPressed) {
+		if(touch) {
 			playing = true;
 		}
 	}
@@ -75,15 +75,15 @@ this.Circle = function() {
 	}
 }
 
-function mouseClicked() {
+function touchEnded() {
 	for (var i = circleArray.length - 1; i >= 0; i--) {
 		var distance = dist(mouseX, mouseY, circleArray[i].x, circleArray[i].y);
 		if (distance < abs(circleArray[i].radius / 2)) {
 			popCircle(i);
 			counter++;
 		}
-
 	}
+	touch = !touch;
 }
 
 function pushCircle() {
@@ -117,17 +117,17 @@ function increaseDifficulty() {
 function startText() {
 	textAlign(CENTER);
 	text("Click on the circles. Miss 3 circles and you lose.", width/2, height/2);
-	text("Press any key to begin.", width/2, height * 2 / 3);
+	text("Click to begin.", width/2, height * 2 / 3);
 }
 
 function gameOverText() {
 	text("Game Over!", width/2, height/2);
-	text("Press any key to play again.", width/2, height * 2 / 3);
+	text("Click to play again.", width/2, height * 2 / 3);
 }
 
 function restartGame() {
 	if (!playing && lost) {
-		if (keyIsPressed) {
+		if (touch) {
 			strikes = 0;
 			counter = 0;
 			seconds = 180;

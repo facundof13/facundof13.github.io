@@ -93,6 +93,13 @@ function mouseReleased() {
     }
 }
 
+function iosNext() {
+    if (gameOver) {
+        gameOver = false;
+        background(0);
+    }
+}
+
 //board object functions
 this.Board = function() {
 

@@ -67,7 +67,12 @@ body {
       max-width: 480px;
     }
   }
-
+  @media screen and (min-width: 0px) and (max-width: 400px) {
+    #ios{ display: block; }  /* show it on smaller screen */
+  }
+  @media screen and (min-width: 401px) {
+    #ios{ display: none; }   /* hide it on larger screens */
+  }
 .flex-grid-sketches {
   display: flex;
   flex-direction: column;
