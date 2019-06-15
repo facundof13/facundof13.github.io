@@ -222,3 +222,26 @@ footer p {
   color: #294f6d;
   background-color: #d3dee7;
 }
+
+#flexbox-container {
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+input {
+  width: 50px;
+}
+#totalAmount {
+  text-align: center;
+}
+
+.left {
+  width: 70%;
+  float: left;
+  text-align: left;
+}
+.right {
+  width: 25%;
+  margin-left: 10px;
+  float:left;
+}
