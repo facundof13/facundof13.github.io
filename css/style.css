@@ -1,9 +1,10 @@
 body {
-    background-color: #d3dee7;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+  background-color: #d3dee7;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
+
 .button {
   color: white;
   text-align: center;
@@ -11,38 +12,46 @@ body {
   display: inline-block;
   font-size: 16px;
 }
+
 .flex-grid {
-    display: flex;
+  display: flex;
 }
+
 .no-margin {
   margin-top: 10px;
   margin-bottom: -25px;
 }
+
 .col {
-    justify-content: flex-start;
-    flex-direction: column;
-    flex: 1;  
-    margin: 5px;
-    padding-bottom: 15px;
-    border: solid #a3b8c8;;  
-    background-color: white;
-}
-.title {
-    display: flex;
-    justify-content: center;
-    color: #294F6D;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 1;
+  margin: 5px;
+  padding-bottom: 15px;
+  border: solid #a3b8c8;
+  ;
+  background-color: white;
 }
 
-.col a, footer a {
+.title {
+  display: flex;
+  justify-content: center;
+  color: #294F6D;
+}
+
+.col a,
+footer a {
   color: #294f6d;
   text-decoration: underline;
 }
+
 .links {
   display: flex;
   justify-content: space-evenly;
   padding-top: 10px;
 
 }
+
 .link-items {
   flex-direction: row;
   text-align: center;
@@ -52,79 +61,104 @@ body {
   display: flex;
   margin: 10px;
 }
+
 @media screen and (max-width: 640px) {
   #sketch canvas {
     width: 100% !important;
     height: 100% !important;
   }
 }
+
 .main {
-    padding: 20px;
+  padding: 20px;
 }
+
 @media screen and (max-width: 500px) {
-    .flex-grid {
-      flex-direction: column;
-      max-width: 480px;
-    }
+  .flex-grid {
+    flex-direction: column;
+    max-width: 480px;
   }
-  @media screen and (min-width: 0px) and (max-width: 400px) {
-    #ios{ display: block; }  /* show it on smaller screen */
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #ios {
+    display: block;
   }
-  @media screen and (min-width: 401px) {
-    #ios{ display: none; }   /* hide it on larger screens */
+
+  /* show it on smaller screen */
+}
+
+@media screen and (min-width: 401px) {
+  #ios {
+    display: none;
   }
+
+  /* hide it on larger screens */
+}
+
 .flex-grid-sketches {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .instructions {
-    margin: 10px;
-    border: solid #a3b8c8;
-    background-color: white;
-    font-size: 14px;
-    text-align: center;
-    max-width: 55em;
+  margin: 10px;
+  border: solid #a3b8c8;
+  background-color: white;
+  font-size: 14px;
+  text-align: center;
+  max-width: 55em;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
 }
+
 footer p {
   text-align: center;
   font-size: 10px;
 }
+
 /* bootstrap stuff */
 .navbar {
   background-color: #718ea4;
 }
+
 .navbar .navbar-brand {
   color: #294f6d;
 }
+
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color:#d3dee7;
+  color: #d3dee7;
 }
+
 .navbar .navbar-text {
   color: #d3dee7;
 }
+
 .navbar .navbar-text a {
-  color:#d3dee7;
+  color: #d3dee7;
 }
+
 .navbar .navbar-text a:hover,
 .navbar .navbar-text a:focus {
-  color:#d3dee7; 
+  color: #d3dee7;
 }
+
 .navbar .navbar-nav .nav-link {
-  color:#d3dee7;
+  color: #d3dee7;
   border-radius: .25rem;
   margin: 0 0.25em;
 }
+
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus {
   color: #294f6d;
 }
+
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item.active .nav-link:hover,
 .navbar .navbar-nav .nav-item.active .nav-link:focus,
@@ -134,23 +168,29 @@ footer p {
   color: #294f6d;
   background-color: #d3dee7;
 }
+
 .navbar .navbar-toggle {
   border-color: #d3dee7;
 }
+
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus {
   background-color: #d3dee7;
 }
+
 .navbar .navbar-toggle .navbar-toggler-icon {
   color: #a3b8c8;
 }
+
 .navbar .navbar-collapse,
 .navbar .navbar-form {
   border-color: #a3b8c8;
 }
+
 .navbar .navbar-link {
   color: #a3b8c8;
 }
+
 .navbar .navbar-link:hover {
   color: #294f6d;
 }
@@ -159,10 +199,12 @@ footer p {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #a3b8c8;
   }
+
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #294f6d;
   }
+
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #294f6d;
     background-color: #d3dee7;
@@ -173,10 +215,12 @@ footer p {
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #a3b8c8;
   }
+
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #294f6d;
   }
+
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #294f6d;
     background-color: #d3dee7;
@@ -187,10 +231,12 @@ footer p {
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #a3b8c8;
   }
+
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #294f6d;
   }
+
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #294f6d;
     background-color: #d3dee7;
@@ -201,10 +247,12 @@ footer p {
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #a3b8c8;
   }
+
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #294f6d;
   }
+
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #294f6d;
     background-color: #d3dee7;
@@ -214,34 +262,47 @@ footer p {
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
   color: #a3b8c8;
 }
+
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
   color: #294f6d;
 }
+
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
   color: #294f6d;
   background-color: #d3dee7;
 }
+@media (max-width: 800px) {
 
 #flexbox-container {
   display: flex;
   flex-direction: column;
-  padding:10px;
+  padding: 10px;
 }
+
 input {
   width: 50px;
 }
+
 #totalAmount {
   text-align: center;
 }
 
-.left {
-  width: 70%;
-  float: left;
-  text-align: left;
+  .left {
+    width: 70%;
+    float: left;
+    text-align: left;
+  }
+
+  .right {
+    width: 25%;
+    margin-left: 10px;
+    float: left;
+  }
 }
-.right {
-  width: 25%;
-  margin-left: 10px;
-  float:left;
+ 
+#flexbox-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

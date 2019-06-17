@@ -31,51 +31,52 @@
   <!--End Nav Bar-->
 
   <div id="flexbox-container">
-
+    <p id="totalAmount">Total Amount: $0.00</p>
     <form id="myForm">
-      <p id="totalAmount">Total Amount: </p>
       <div>
-      <label class="left" for="100bills">Enter # $100 Bills:</label> <input class="right" value=0 type="number" name="100bills" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="50bills" class="left">Enter # $50 Bills:</label> <input class="right" value=0 type=" number" name="50bills" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="20bills" class="left">Enter # $20 Bills:</label> <input class="right" value=0 type=" number" name="20bills" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="10bills" class="left">Enter # $10 Bills: </label><input class="right" value=0 type=" number" name="10bills" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="5bills" class="left">Enter # $5 Bills:</label> <input class="right" value=0 type=" number" name="5bills" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="1bills" class="left">Enter # $1 Bills:</label> <input class="right" value=0 type=" number" name="1bills" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="quarters" class="left">Enter # quarters:</label> <input class="right" value=0 type=" number" name="quarters" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="dimes" class="left">Enter # dimes:</label> <input class="right" value=0 type=" number" name="dimes" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="nickels" class="left">Enter # nickels:</label> <input class="right" value=0 type=" number" name="nickels" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
-    <div>
-      <label for="otherAmounts" class="left">Enter other amounts:</label> <input class="right" value=0 type=" number" name="otherAmounts" onblur="calculateMoney()"
-        onfocus="if (this.value === '0') this.value = '' ">
-    </div>
+        <label class="left" for="100bills">Enter # $100 Bills:</label> <input class="right" value=0 type="number"
+          name="100bills" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="50bills" class="left">Enter # $50 Bills:</label> <input class="right" value=0 type="number"
+          name="50bills" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="20bills" class="left">Enter # $20 Bills:</label> <input class="right" value=0 type="number"
+          name="20bills" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="10bills" class="left">Enter # $10 Bills: </label><input class="right" value=0 type="number"
+          name="10bills" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="5bills" class="left">Enter # $5 Bills:</label> <input class="right" value=0 type="number"
+          name="5bills" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="1bills" class="left">Enter # $1 Bills:</label> <input class="right" value=0 type="number"
+          name="1bills" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="quarters" class="left">Enter # quarters:</label> <input class="right" value=0 type="number"
+          name="quarters" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="dimes" class="left">Enter # dimes:</label> <input class="right" value=0 type="number" name="dimes"
+          onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="nickels" class="left">Enter # nickels:</label> <input class="right" value=0 type="number"
+          name="nickels" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
+      <div>
+        <label for="otherAmounts" class="left">Enter other amounts:</label> <input class="right" value=0 type="number"
+          name="otherAmounts" onblur="calculateMoney()" onfocus="if (this.value === '0') this.value = '' ">
+      </div>
     </form>
-    <div><button onclick="document.getElementById('myForm').reset()">Reset</button></div>
+    <div><button
+        onclick="document.getElementById('myForm').reset(); document.getElementById('totalAmount').innerHTML = 'Total Amount: $0.00'">Reset</button>
+    </div>
 
   </div>
 
